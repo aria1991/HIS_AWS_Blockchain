@@ -1,6 +1,42 @@
 # HIS_AWS_Blockchain
 Implementing a health information system of a hospital on the blockchain on AWS.
 
+```markdown
+                                                       +------------+
+                                                       | AWS Cloud  |
+                                                       +------------+
+                                                             |
+                                                             | receive data
+                                                             v
++------------+    authenticate    +-------------+    send data    +------------+
+| Hospital   | -------------------> | Blockchain | -------------------> | Database |
++------------+                    +-------------+                     +------------+
+                                                                            |
+                                                                            | store data
+                                                                            v
+                                                                  +------------+
+                                                                  | Data Backup |
+                                                                  +------------+
+                                                                            |
+                                                                            | store data
+                                                                            v
+                                                             +------------+
+                                                             | Data Warehouse |
+                                                             +------------+
+                                                                            |
+                                                                            | process data
+                                                                            v
+                                                       +------------+
+                                                       | Data Analytics |
+                                                       +------------+
+                                                                            |
+                                                                            | generate reports
+                                                                            v
+                                                       +------------+
+                                                       | Reporting   |
+                                                       +------------+
+
+```
 
 Install the necessary Python packages for working with blockchain and AWS. You can do this by running the following commands:
 
